@@ -41,7 +41,7 @@ def final_check(interface,spoofed_mac):
 	if(current_mac.group(0) == spoofed_mac):
 		print(Fore.BLUE + "[+] MAC Address Spoofed Successfully , Happy Hacking!\n")
 	else:
-		print(Fore.RED + "[-] Enter new MAC Address Properly!\n")
+		print(Fore.RED + "[-] Invalid MAC or check for sudo privileges\n")
 	return current_mac.group(0)
 
 def adapter_info(interface):
